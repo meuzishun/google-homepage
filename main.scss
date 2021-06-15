@@ -44,11 +44,24 @@ body {
         }
 
         .box-icon {
+
+            img {
+                z-index: -1;
+                color: red;
+            }
+
             display: inline-block;
-            background-image: url('//web.archive.org/web/20191130234759im_/https://ssl.gstatic.com/gb/images/i2_2ec824b0.png');
-            background-position: -132px -38px;
-            background-size: 528px 68px;
-            height: 30px;
+            // background-image: url('black-24dp (1)/2x/round_apps_black_24dp.png');
+            // background-position: -132px -38px;
+            // background-size: 528px 68px;
+        
+            height: 20px;
+            width: 20px;
+
+            div {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         button {
@@ -66,7 +79,7 @@ body {
         align-items: center;
         justify-content: flex-end;
         gap: 2rem;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
 
         form {
             width: 50%;
@@ -77,10 +90,15 @@ body {
 
             #search-field {
                 width: 80%;
-                padding: 0.8rem;
+                padding: 0.8rem 3rem;
                 border-radius: 50px;
                 border-style: solid;
                 border-width: 1px;
+
+                background-image: url('black-24dp/1x/baseline_search_black_24dp.png');
+                background-repeat: no-repeat;
+                background-position-y: 10px;
+                background-position-x: 10px;
             }
 
             .button-container {
