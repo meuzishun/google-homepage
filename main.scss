@@ -1,4 +1,5 @@
-$main-font-color: rgba(0, 0, 0, 0.87);
+$header-font-color: rgba(0, 0, 0, 0.87);
+$footer-font-color: rgb(94, 99, 104);
 
 * {
     margin: 0;
@@ -17,10 +18,9 @@ body {
     justify-content: space-between;
 
     button {
-        grid-area: button;
-        padding: 0.5rem;
+        padding: 0.4rem 0.8rem 0.5rem 0.8rem;
         border: none;
-        color: var(--main-font-color);
+        color: rgb(103, 103, 103);
     }
 
     header, footer {
@@ -31,13 +31,17 @@ body {
 
         a {
             margin: 0 0.8rem;
-            color: $main-font-color;
             text-decoration: none;
         }
     }
-
+    
     header {
+        color: $header-font-color;
         font-size: 0.8rem;
+
+        a {
+            color: $header-font-color;
+        }
 
         .box-icon {
             display: inline-block;
@@ -46,6 +50,14 @@ body {
             background-size: 528px 68px;
             height: 30px;
         }
+
+        button {
+            color: white;
+            font-weight: bold;
+            background-color: rgba(0, 72, 255, 0.708);
+            border-radius: 0.15rem;
+            margin-right: 1rem;
+        }
     }
 
     main {
@@ -53,16 +65,33 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        gap: 2rem;
+        transform: translateY(-50%);
 
         form {
-            display: grid;
-            grid-template-areas:
-            'search search search search'
-            '. button button .';
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
 
             #search-field {
-                grid-area: search;
+                width: 80%;
+                padding: 0.8rem;
+                border-radius: 50px;
+                border-style: solid;
+                border-width: 1px;
             }
+
+            .button-container {
+                display: flex;
+                gap: 1rem;
+                button {
+                    padding: 0.5rem 1.1rem;
+                    border-radius: 0.2rem;
+                }
+            }
+
         }
     }
     
@@ -71,6 +100,10 @@ body {
         background-color: #f2f2f2;
         border-top: 1px solid #e1e1e1;
     
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+
+        a {
+            color: $footer-font-color;
+        }
     }
 }
