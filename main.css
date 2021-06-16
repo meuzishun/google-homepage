@@ -64,11 +64,12 @@ body header .box-icon {
 body header .box-icon img {
   -webkit-transform: translateY(33%);
           transform: translateY(33%);
+  opacity: 0.5;
 }
 
 body header button {
   color: white;
-  background-color: #2b7de9;
+  background-color: #237df3d0;
   border-radius: 0.25rem;
   margin-right: 1rem;
   padding: 0.6rem 1.5rem;
@@ -115,10 +116,12 @@ body main form #search-field {
   border-radius: 50px;
   border-style: solid;
   border-width: 1px;
-  background-image: url("black-24dp/1x/baseline_search_black_24dp.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url("black-24dp/1x/baseline_search_black_24dp.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("black-24dp/1x/baseline_search_black_24dp.png");
   background-repeat: no-repeat;
+  background-size: 3.5%;
   background-position-y: 10px;
-  background-position-x: 10px;
+  background-position-x: 12px;
 }
 
 body main form .button-container {
