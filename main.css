@@ -89,8 +89,8 @@ body main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   gap: 2rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
 }
 
 body main form {
